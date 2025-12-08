@@ -1,0 +1,10 @@
+'''
+
+scapy
+streamlit
+pandas
+plotly
+scikit-learn
+watchdog
+
+'''
