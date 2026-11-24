@@ -37,7 +37,27 @@ It captures packets in real-time, parses metadata (Source/Destination IP, Protoc
 - Administrator/Root privileges (required for packet sniffing).
 
 
-### 1. Clone the Repository
+### 1. Clone the repository
 ```bash
-git clone https://github.com/aman01k/NetGuard.git
-cd NetGuard
+git clone https://github.com/aman01k/NetGuard-AI-Driven-Real-Time-Network-Threat-Monitor.git
+cd NetGuard-AI-Driven-Real-Time-Network-Threat-Monitor
+```
+
+### 2. Install dependencies
+```bash
+python3 -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### 3. Start the dashboard
+Packet capture needs administrator rights, so start Streamlit with them:
+
+```bash
+# macOS / Linux
+sudo venv/bin/streamlit run dashboard.py
+```
+
+On Windows, install [Npcap](https://npcap.com/) first, then run `streamlit run dashboard.py` from a terminal opened as Administrator.
+
+The dashboard opens at http://localhost:8501.
